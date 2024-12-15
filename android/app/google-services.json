@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "751871598348",
+    "project_id": "ostello-fd492",
+    "storage_bucket": "ostello-fd492.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751871598348:android:b52a15fdc0ffd2fb457329",
+        "android_client_info": {
+          "package_name": "com.example.ostello"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOjUcEpVnuLreBYSQu-rtRPT9UPYmOlSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
