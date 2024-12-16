@@ -47,6 +47,55 @@ class LectureScreen extends ConsumerWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
+                Positioned(
+                  left: 10,
+                  top: 20,
+                  child: InkWell(
+                    onTap: () {},
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white.withOpacity(0.2),
+                      child: Icon(
+                        Icons.arrow_back,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  right: 10,
+                  bottom: 20,
+                  child: InkWell(
+                    onTap: () {},
+                    child: CircleAvatar(
+                      backgroundColor: Colors.black.withOpacity(0.4),
+                      child: Icon(
+                        Icons.zoom_out_map,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  right: 10,
+                  top: 20,
+                  child: InkWell(
+                    onTap: () {},
+                    child: Container(
+                      padding: EdgeInsets.symmetric(vertical: 4, horizontal: 14),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(16)),
+                        color: Colors.black.withOpacity(0.4),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.people_alt, color: Colors.white, size: 20,),
+                          SizedBox(width: 4,),
+                          Text('37.8k', style: ThemeService.bodySmall.copyWith(color: Colors.white, fontWeight: FontWeight.w300),)
+                        ],
+                      ),
+                    )
+                  ),
+                )
               ],
             ),
 

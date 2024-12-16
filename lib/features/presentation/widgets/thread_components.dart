@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 import 'package:ostello/core/services/size_config.dart';
 import 'package:ostello/core/services/theme_service.dart';
 import 'package:ostello/features/answers/domain/answer.dart';
@@ -69,7 +70,9 @@ class ThreadQuestion extends ConsumerWidget {
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        question.raiseTime.toString(),
+                        '   ${DateFormat('d MMM y')
+                            .format(question.raiseTime)}'
+                            ,
                         style: ThemeService.bodyMedium.copyWith(
                           color: Color(0xff7c7c7c),
                           fontWeight: FontWeight.bold,
@@ -144,7 +147,8 @@ class ThreadAnswer extends ConsumerWidget {
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        answer.answerTime.toString(),
+                        '   ${DateFormat('d MMM y')
+                            .format(answer.answerTime)}',
                         style: ThemeService.bodyMedium.copyWith(
                           color: Color(0xff7c7c7c),
                           fontWeight: FontWeight.bold,

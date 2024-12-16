@@ -15,6 +15,9 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: controller,
+      style: ThemeService.labelMedium.copyWith(
+        color: const Color(0xFF7C7C7C), // #7C7C7C color for hint text
+      ),
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: ThemeService.labelMedium.copyWith(
@@ -22,13 +25,15 @@ class CustomTextField extends StatelessWidget {
         ),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: ThemeService.secondaryColor.withOpacity(0.2), // Underline color
+            color:
+                ThemeService.secondaryColor.withOpacity(0.2), // Underline color
             width: 1.0, // Thickness of the underline
           ),
         ),
         focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: ThemeService.secondaryColor.withOpacity(0.2), // Underline color when focused
+            color: ThemeService.secondaryColor
+                .withOpacity(0.2), // Underline color when focused
             width: 1.0, // Thickness of the underline
           ),
         ),
